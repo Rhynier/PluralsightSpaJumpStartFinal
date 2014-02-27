@@ -255,10 +255,8 @@
     <None Include="Scripts\jquery-1.9.1.intellisense.js">
       <DependentUpon>jquery-1.9.1.js</DependentUpon>
     </None>
-    <Content Include="Scripts\knockout-2.2.1.debug.js" />
-    <Content Include="Scripts\knockout-2.2.1.js">
-      <DependentUpon>knockout-2.2.1.debug.js</DependentUpon>
-    </Content>
+    <Content Include="Scripts\knockout-3.0.0.debug.js" />
+    <Content Include="Scripts\knockout-3.0.0.js" />
     <Content Include="Scripts\modernizr-2.7.1.js" />
     <Content Include="Scripts\moment-with-langs.js" />
     <Content Include="Scripts\moment-with-langs.min.js" />
