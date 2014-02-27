@@ -25,8 +25,19 @@
     </div>
 
 
-    @Scripts.Render("~/scripts/vendor")
-    <script src="/App/durandal/amd/require.js" 
-            data-main="App/main"></script>
+    <!--
+    When bundling, load in this sequence:
+    1) shivs and jQuery
+    2) 3rd party libraries
+    3) require.js
+    4) your app libraries
+    5) main.js
+    -->
+    @Scripts.Render(
+        "~/bundles/jquery",
+        "~/bundles/vendor"
+    )
+
+    <script src="/Scripts/require.js" data-main="App/main"></script>
 </body>
 </html>

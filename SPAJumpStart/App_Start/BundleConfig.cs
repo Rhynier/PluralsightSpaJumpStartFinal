@@ -7,16 +7,25 @@ namespace CodeCamper
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
+            // Force optimization to be on or off, regardless of web.config setting
+            //BundleTable.EnableOptimizations = false;
+            bundles.UseCdn = false;
+
             bundles.IgnoreList.Clear();
             AddDefaultIgnorePatterns(bundles.IgnoreList);
 
+            // Modernizr goes separate since it loads first
             bundles.Add(
                 new ScriptBundle("~/scripts/modernizr")
                     .Include("~/scripts/modernizr-{version}.js"));
 
+            // jQuery
             bundles.Add(
-              new ScriptBundle("~/scripts/vendor")
-                .Include("~/scripts/jquery-{version}.js")
+                new ScriptBundle("~/bundles/jquery")
+                .Include("~/scripts/jquery-{version}.js"));
+
+            bundles.Add(
+              new ScriptBundle("~/bundles/vendor")
                 .Include("~/scripts/bootstrap.js")
                 .Include("~/scripts/knockout-{version}.js")
                 .Include("~/scripts/sammy-{version}.js")
