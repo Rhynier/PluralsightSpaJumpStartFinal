@@ -4,8 +4,10 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Breeze.WebApi;
 using Newtonsoft.Json.Linq;
+using Breeze.WebApi2;
+using Breeze.ContextProvider;
+using Breeze.ContextProvider.EF6;
 
 namespace CodeCamper.Controllers
 {
