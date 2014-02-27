@@ -178,16 +178,14 @@
     <Content Include="App\viewmodels\speakers.js" />
     <Content Include="App\views\speakers.html" />
     <Content Include="App_Data\CodeCamper.sdf" />
-    <Content Include="content\bootstrap-responsive.css" />
-    <Content Include="content\bootstrap-responsive.min.css" />
+    <Content Include="content\bootstrap-theme.css" />
+    <Content Include="content\bootstrap-theme.min.css" />
     <Content Include="content\bootstrap.css" />
     <Content Include="content\bootstrap.min.css" />
     <Content Include="content\durandal.css" />
     <Content Include="content\font-awesome.css" />
     <Content Include="content\font-awesome.min.css" />
     <Content Include="content\ie10mobile.css" />
-    <Content Include="content\images\glyphicons-halflings-white.png" />
-    <Content Include="content\images\glyphicons-halflings.png" />
     <Content Include="content\images\icon-blue.png" />
     <Content Include="content\images\icon-light-blue-small.png" />
     <Content Include="content\images\icon-light-blue.png" />
@@ -229,19 +227,21 @@
     <Content Include="content\toastr.css" />
     <Content Include="content\toastr.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="content\toastr.less" />
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\papademo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\papademo - Web Deploy.pubxml" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js">
-      <DependentUpon>bootstrap.js</DependentUpon>
-    </Content>
     <None Include="Scripts\breeze.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\breeze.debug.js" />
     <Content Include="Scripts\breeze.min.js" />
     <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
