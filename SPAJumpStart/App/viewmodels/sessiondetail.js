@@ -1,5 +1,5 @@
 ﻿define(['services/datacontext',
-        'durandal/plugins/router',
+        'plugins/router',
         'durandal/system',
         'durandal/app',
         'services/logger'],
@@ -12,7 +12,7 @@
         var isDeleting = ko.observable(false);
 
         var activate = function (routeData) {
-            var id = parseInt(routeData.id);
+            var id = parseInt(routeData);
             initLookups();
             return datacontext.getSessionById(id, session);
         };

@@ -26,8 +26,8 @@ namespace CodeCamper
 
             bundles.Add(
               new ScriptBundle("~/bundles/vendor")
-                .Include("~/scripts/bootstrap.js")
                 .Include("~/scripts/knockout-{version}.js")
+                .Include("~/scripts/bootstrap.js")
                 .Include("~/scripts/sammy-{version}.js")
                 .Include("~/scripts/moment.js")
                 .Include("~/scripts/Q.js")

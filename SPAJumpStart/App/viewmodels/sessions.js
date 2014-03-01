@@ -1,4 +1,4 @@
-﻿define(['services/datacontext', 'durandal/plugins/router'],
+﻿define(['services/datacontext', 'plugins/router'],
     function (datacontext, router) {
         var sessions = ko.observableArray();
 
@@ -17,11 +17,11 @@
         var gotoDetails = function(selectedSession) {
             if (selectedSession && selectedSession.id()) {
                 var url = '#/sessiondetail/' + selectedSession.id();
-                router.navigateTo(url);
+                router.navigate(url);
             }
         };
 
-        var viewAttached = function(view) {
+        var attached = function(view) {
             bindEventToList(view, '.session-brief', gotoDetails);
         };
 
@@ -40,7 +40,7 @@
             refresh: refresh,
             sessions: sessions,
             title: 'Sessions',
-            viewAttached: viewAttached
+            attached: attached
         };
         return vm;
     });

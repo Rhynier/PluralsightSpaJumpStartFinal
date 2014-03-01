@@ -12,7 +12,7 @@
     </div>
     <div class="navbar-inner navbar-secondary">
         <div class="btn-group"
-             data-bind="foreach: router.visibleRoutes">
+             data-bind="foreach: router.navigationModel">
             <a data-bind="attr: { href: hash },
                 css: { active: isActive },
                 html: settings.caption"
@@ -24,7 +24,7 @@
                 <span class="text">Admin</span> <span class="caret"></span></a>
             <ul class="dropdown-menu pull-right">
                 <!-- ko foreach: adminRoutes -->
-                <li><a data-bind="click: $parent.addSession, html: caption" href="#"></a></li>
+                <li><a data-bind="click: $parent.addSession, html: title" href="#"></a></li>
                 <!-- /ko -->
             </ul>
         </div>

@@ -141,26 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App\config.js" />
-    <Content Include="App\durandal\amd\almond-custom.js" />
-    <Content Include="App\durandal\amd\optimizer.exe" />
-    <Content Include="App\durandal\amd\r.js" />
-    <Content Include="App\durandal\amd\require.js" />
-    <Content Include="App\durandal\amd\text.js" />
-    <Content Include="App\durandal\app.js" />
-    <Content Include="App\durandal\composition.js" />
-    <Content Include="App\durandal\events.js" />
-    <Content Include="App\durandal\http.js" />
-    <Content Include="App\durandal\messageBox.html" />
-    <Content Include="App\durandal\messageBox.js" />
-    <Content Include="App\durandal\modalDialog.js" />
-    <Content Include="App\durandal\plugins\router.js" />
-    <Content Include="App\durandal\system.js" />
-    <Content Include="App\durandal\transitions\entrance.js" />
-    <Content Include="App\durandal\viewEngine.js" />
-    <Content Include="App\durandal\viewLocator.js" />
-    <Content Include="App\durandal\viewModel.js" />
-    <Content Include="App\durandal\viewModelBinder.js" />
-    <Content Include="App\durandal\widget.js" />
     <Content Include="App\main.js" />
     <Content Include="App\services\breeze.partial-entities.js" />
     <Content Include="App\services\datacontext.js" />
@@ -190,6 +170,8 @@
     <Content Include="content\images\icon-light-blue-small.png" />
     <Content Include="content\images\icon-light-blue.png" />
     <Content Include="content\images\icon.png" />
+    <Content Include="content\images\ios-startup-image-landscape.png" />
+    <Content Include="content\images\ios-startup-image-portrait.png" />
     <Content Include="content\images\photos\aaron_skonnard.jpg" />
     <Content Include="content\images\photos\colleen_papa.jpg" />
     <Content Include="content\images\photos\craig_shoemaker.jpg" />
@@ -237,14 +219,33 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\bootstrap-theme.css.map" />
+    <Content Include="content\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\papademo - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\papademo - Web Deploy.pubxml" />
     <None Include="Scripts\breeze.intellisense.js" />
+    <Content Include="Scripts\almond-custom.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\breeze.debug.js" />
     <Content Include="Scripts\breeze.min.js" />
     <None Include="Scripts\jquery-1.9.1-vsdoc.js" />
+    <Content Include="Scripts\durandal\activator.js" />
+    <Content Include="Scripts\durandal\app.js" />
+    <Content Include="Scripts\durandal\binder.js" />
+    <Content Include="Scripts\durandal\composition.js" />
+    <Content Include="Scripts\durandal\events.js" />
+    <Content Include="Scripts\durandal\plugins\dialog.js" />
+    <Content Include="Scripts\durandal\plugins\history.js" />
+    <Content Include="Scripts\durandal\plugins\http.js" />
+    <Content Include="Scripts\durandal\plugins\observable.js" />
+    <Content Include="Scripts\durandal\plugins\router.js" />
+    <Content Include="Scripts\durandal\plugins\serializer.js" />
+    <Content Include="Scripts\durandal\plugins\widget.js" />
+    <Content Include="Scripts\durandal\system.js" />
+    <Content Include="Scripts\durandal\transitions\entrance.js" />
+    <Content Include="Scripts\durandal\viewEngine.js" />
+    <Content Include="Scripts\durandal\viewLocator.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js">
       <DependentUpon>jquery-1.9.1.js</DependentUpon>
@@ -266,10 +267,7 @@
     <Content Include="Scripts\q.min.js" />
     <Content Include="Scripts\r.js" />
     <Content Include="Scripts\require.js" />
-    <Content Include="Scripts\sammy-0.7.4.js" />
-    <Content Include="Scripts\sammy-0.7.4.min.js">
-      <DependentUpon>sammy-0.7.4.js</DependentUpon>
-    </Content>
+    <Content Include="Scripts\text.js" />
     <Content Include="Scripts\toastr.js" />
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="Scripts\_references.js" />
@@ -293,6 +291,7 @@
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\README_ENU.txt" />
     <None Include="_bin_deployableAssemblies\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
     <None Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <Content Include="weyland-config.js" />
     <Content Include="_splash.cshtml" />
   </ItemGroup>
   <ItemGroup>

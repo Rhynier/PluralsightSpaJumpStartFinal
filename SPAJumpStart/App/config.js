@@ -9,38 +9,35 @@
 
     var remoteServiceName = 'breeze/Breeze';
 
-    var appTitle = 'CCJS';
+    var appTitle = 'SPAJumpStart';
 
-    var routes = [{
-        url: 'sessions',
-        moduleId: 'viewmodels/sessions',
-        name: 'Sessions',
-        visible: true,
-        caption: 'Sessions',
-        settings: { caption: '<i class="icon-book"></i> Sessions' }
+    var routes = [
+        {
+            route: '',
+            moduleId: 'viewmodels/sessions',
+            title: 'Sessions',
+            nav: true,
+            settings: { caption: '<i class="icon-book"></i> Sessions' }
         }, {
-        url: 'speakers',
-        moduleId: 'viewmodels/speakers',
-        name: 'Speakers',
-        caption: 'Speakers',
-        visible: true,
-        settings: { caption: '<i class="icon-user"></i> Speakers' }
+            route: 'speakers',
+            moduleId: 'viewmodels/speakers',
+            title: 'Speakers',
+            nav: true,
+            settings: { caption: '<i class="icon-user"></i> Speakers' }
         }, {
-        url: 'sessiondetail/:id',
-        moduleId: 'viewmodels/sessiondetail',
-        name: 'Edit Session',
-        caption: 'Edit Session',
-        visible: false
-    }, {
-        url: 'sessionadd',
-        moduleId: 'viewmodels/sessionadd',
-        name: 'Add Session',
-        visible: false,
-        caption: 'Add Session',
-        settings: { admin: true, caption: '<i class="icon-plus"></i> Add Session' }
-    }];
-    
-    var startModule = 'sessions';
+            route: 'sessiondetail/:id',
+            moduleId: 'viewmodels/sessiondetail',
+            title: 'Edit Session',
+            nav: false
+        }, {
+            route: 'sessionadd',
+            moduleId: 'viewmodels/sessionadd',
+            title: 'Add Session',
+            nav: false,
+            settings: { admin: true, caption: '<i class="icon-plus"></i> Add Session' }
+        }];
+
+    var startModule = 'viewmodels/sessions';
 
     return {
         appTitle: appTitle,
